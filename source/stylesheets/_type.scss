@@ -1,0 +1,47 @@
+/******************************
+
+    Type
+
+*******************************/
+
+
+
+p, a, ol, ul, blockquote, div {
+    line-height:$line-height;
+}
+
+a {
+    color:$primary-color;
+    text-decoration:none;
+    transition:all ease-in-out 120ms;
+    &:hover {
+        background:tint($primary-color, 12.5%);
+    }
+}
+
+ul {
+    padding:0 0 0 1em;
+    li {
+        margin-bottom:0.5em;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height:1.25;
+    font-family:$heading-type;
+}
+
+.article {
+    p, a, ol, ul {
+        font-weight:400;
+        line-height:1.75;
+    }
+
+    p {
+        margin:0 0 2.5rem 0;
+    }
+
+    p + h2 {
+        margin-top:2em;
+    }
+}

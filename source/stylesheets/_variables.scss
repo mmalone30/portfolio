@@ -1,0 +1,48 @@
+/******************************
+
+    Variables
+
+*******************************/
+
+// Base Colors
+$dark-gray:#22313F;
+$pink:#EC407A;
+$coral:#DB466B;
+$light-gray:#ecf0f1;
+$yellow:#FFE26F;
+$green:#1abc9c;
+$teal:#A9EEE6;
+$orange:#FF895D;
+$seafoam:#7BCACE;
+$purple:#4F4E79;
+$blue:#3498db;
+
+$pink2:rgba(236, 64, 122, 0.85);
+
+$tealRGBA:rgba(70,205,207, 0.75);
+
+$yellowRGBA:rgba(255,226,111, 0.75);
+
+// Semantic Colors
+$text-color:$dark-gray;
+$bg-color:white;
+$primary-color:$pink;
+
+//Type variables
+
+$base-font-size:1rem;
+
+$line-height:1.6;
+
+$san-serif:"aktiv-grotesk", "Helvetica-Neue", "Helvetica";
+$serif:"freight-text-pro";
+$main-type:$san-serif;
+$heading-type:$san-serif;
+
+@function tint($color, $percentage) {
+  @return mix($color, white, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix($color, black, $percentage);
+}

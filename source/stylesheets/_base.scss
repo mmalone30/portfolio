@@ -1,0 +1,21 @@
+/******************************
+
+    Base
+
+*******************************/
+
+body {
+    font-family:$main-type;
+    font-size:$base-font-size;
+    color:$text-color;
+    background:white;
+    font-weight:400;
+    //background-image:linear-gradient($pink, $purple);
+
+}
+
+* {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}

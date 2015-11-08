@@ -1,0 +1,82 @@
+---
+title: How could we make patient statements easier to understand?
+date: 2014-06-02 21:49 UTC
+layout: blog_layout
+tags: Kareo
+industry: Healthcare
+img: images/pub-metrics.png
+color: b496ca
+icon: stethoscope
+---
+
+
+<p>
+    Publishers frequently log into SFP to see site and app inventory performance.
+    They log in to answers specific questions. Some broad, others specific. The more a
+    publisher understands their inventory, the better they can monetize it. However, many questions were difficult
+    to answer. We wanted to create a better experience to answer these questions.
+</p>
+
+<h2>The Obvious, the Easy, and the Possible</h2>
+<p>
+    As I spoke with publishers, the questions just kept piling up, and I felt myself getting further
+    and further from a solution. How could all these different questions, from different publishers,
+    with different needs be answered? Then I recalled a brilliant article from 2011 called
+    <a href="https://signalvnoise.com/posts/3047-the-obvious-the-easy-and-the-possible">The Obvious, the Easy, and the Possible</a>
+    by Jason Fried that helped focus my efforts.
+</p>
+
+<p>
+    The obvious questions were easy: What were my earnings last month?, What was my fill rate?
+    When a publisher has these questions, their reports should default to answering them. Other
+    more specific questions should then be easy to answer, like When we had a drop in fill on
+    Thursday, how were earnings affected? or What's the spread of impressions per device?
+</p>
+
+<h2>Levels and Dimensions</h2>
+<p>
+    Now that I had a framework for prioritizing questions, I needed to actually design something
+    to answer them. I experimented with complex query-like interfaces and powerful comparison
+    visualizations. But these felt to complicated and didn't offer the obvious defaults that I
+    wanted. I didn't want publishers to put in a lot of effort to get answers. So I tried to work
+    out the inventory data between two axes: levels and dimensions. A level is a scope of inventory,
+    like a placement (1 piece of inventory) or a website (a collection of inventory). A dimension
+    is a lens to view that level.
+</p>
+
+<p>
+    The way I described it to my team is with a metaphorical set of binoculars. Imagine you have a
+    pair of high-tech binoculars and you're looking at a mountain. The binoculars are first set at
+    the widest possible aperture so you can see the whole mountain and the field in the foreground.
+    You can then turn a dial to zoom in on the mountain. You can zoom in all the way until just the
+    peak is in view. These are levels. Another dial on the binoculars allows you to see the mountain
+    through different wavelengths. The default is the visible spectrum but turn this dial and you
+    can see the mountain in UV, infrared, and radio wavelengths. These dimensions can tell you a
+    much richer story than visible light alone.
+</p>
+<p>
+    Levels and Dimensions is a clear framework for thinking about publisher reporting. It also feels
+    very <strong>safe</strong>. Reporting interfaces sometimes lead you down a rabbit hole or can
+    feel intimidating. With this reporting design, you usually know where you stand and what you're
+    looking at. It's easy to navigate and easy to get questions answered.
+</p>
+<h2>Next Steps</h2>
+<p>
+    We didn't include any complex reporting tools like comparing levels across different time periods
+    to find growth or comparing dimensions to find patterns. I'd like to figure out a clean way to complete
+    these tasks.
+</p>
+<figure>
+    <img src="/images/pub-metrics2.png">
+    <figcaption>
+        Another early prototype that showed data in aggregate and comparison mode. Comparing some
+        elements doesn't make business sense. For example, comparing websites that target different
+        audiences or that have different business objectives might not be valuable.
+    </figcaption>
+</figure>
+<p>
+    The other major piece of design work that feels missing from this is <strong>in-context actions</strong>. If
+    I see that fill rates are down or placement eCPMs are not where I'd like them to be, I need to take some action:
+    adjust placement floor rate, turn on new demand sources, maybe create new inventory. How do I do that? Those actions
+    should be rolled into reporting somehow.
+</p>

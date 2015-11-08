@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <script src="https://use.typekit.net/nmh5exs.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "The Middleman" %></title>
+
+    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+
+  <body class="<%= page_classes %> article">
+      <div class="top" style="background-color:#<%= current_page.data.color %>;">
+          <a href="../">Back to Home</a>
+      </div>
+      <div class="main-header">
+
+          <div class="container">
+
+              <h1><%= current_page.data.title %></h1>
+              <time><%= current_page.date.strftime('%b %e %Y') %> &middot; <%= current_page.data.tags %> &middot; <%= current_page.data.industry %></time>
+          </div>
+      </div>
+      <div class="main-content">
+          <div class="article-card">
+              <img src="../<%= current_page.data.img %>">
+              <div class="container">
+                  <%= yield %>
+              </div>
+          </div>
+      </div>
+
+  </body>
+</html>

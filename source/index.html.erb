@@ -1,0 +1,31 @@
+---
+title: Mitch Malone - Digital Product Designer
+---
+
+
+
+<div class="main-content">
+    <div class="container">
+        <h3>Recent Projects</h3>
+        <% blog.articles[0...5].each do |article| %>
+          <article class="article-list">
+
+              <a href="<%= article.url %>" style="background-color:#<%= article.data.color %>">
+                  <i class="ss-<%= article.data.icon %>"></i>
+                  <div>
+                      <h1><%= article.title %></h1>
+                      <time><%= article.date.strftime('%b %e %Y') %></time> &middot; <span class="tag"><%= article.tags[0] %><span>
+                  </div>
+              </a>
+          </article>
+        <% end %>
+        <h3>About Me</h3>
+        <p>
+            Hey, I'm Mitch and I'm a digital product designer. Currently, I'm a UX Designer at <a href="">Sharethrough</a>,
+            a native advertising startup in San Francisco. I work on a product that helps publishers make money with
+            advertising that doesn't interrupt or annoy readers. My skills include visual design, interaction design,
+            conducting usability studies and test, and front-end development. I have a strong passion for prototyping,
+            especially with HTML, CSS, and AngularJS.
+        </p>
+    </div>
+</div>
