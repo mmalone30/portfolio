@@ -12,7 +12,7 @@ $light-gray:#ecf0f1;
 $yellow:#FFE26F;
 $green:#1abc9c;
 $teal:#A9EEE6;
-$orange:#FF895D;
+$orange:#ff714d;
 $seafoam:#7BCACE;
 $purple:#4F4E79;
 $blue:#3498db;
@@ -27,6 +27,7 @@ $yellowRGBA:rgba(255,226,111, 0.75);
 $text-color:$dark-gray;
 $bg-color:white;
 $primary-color:$pink;
+$accent-color:$teal;
 
 //Type variables
 
@@ -34,10 +35,10 @@ $base-font-size:1rem;
 
 $line-height:1.6;
 
-$san-serif:"aktiv-grotesk", "Helvetica-Neue", "Helvetica";
-$serif:"freight-text-pro";
+$san-serif:"Gotham Rounded SSm A", "Gotham Rounded SSm B";
+$serif:"Playfair Display";
 $main-type:$san-serif;
-$heading-type:$san-serif;
+$heading-type:$serif;
 
 @function tint($color, $percentage) {
   @return mix($color, white, $percentage);

@@ -9,15 +9,17 @@
 }
 
 .main-header {
-    padding:4rem 0rem;
+    padding:4rem 0;
+
     h1 {
         font-weight:900;
-        font-size:round($base-font-size*1.8);
+        font-size:3rem;
         margin:2rem 0 0 0;
     }
     h2.subtitle {
         font-size:$base-font-size;
-        font-weight:400;
+        font-family:$main-type;
+        font-weight:300;
     }
     img {
         width:4.5rem;
@@ -30,19 +32,21 @@
 .container {
     max-width:760px;
     padding:0 2rem;
-    margin:0 5% 0 11.5%;
+    margin:0 0 0 11.5%;
 }
 
 .top {
-
     display:flex;
+    position:absolute;
     a {
         display:inline-block;
         padding:1rem 1.2rem;
         color:$text-color;
+        opacity:0.3;
         font-size:$base-font-size*0.8;
         &:hover {
-            background:rgba(0,0,0,0.1);
+            opacity:1;
+            background:transparent;
         }
     }
 }
@@ -58,13 +62,8 @@
         }
     }
     .main-header {
-        .container {
-            max-width:800px;
-            padding:0;
-        }
         h1 {
-            font-size:round($base-font-size*2.75);
-            font-weight:bold;
+
             margin-bottom:10px;
         }
 
@@ -75,7 +74,7 @@
             margin:0 0 0.5rem 0;
         }
         figcaption {
-            font-size:round($base-font-size*0.75);
+            font-size:0.75rem;
         }
     }
 }
@@ -90,22 +89,29 @@
     margin-bottom:2em;
     background-size:cover;
     background-repeat:no-repeat;
+    border-radius:5px;
     &:last-of-type {
         margin-bottom:5rem;
     }
     a {
-
         display:flex;
-        padding:4rem;
+        flex-direction:column;
         color:rgba(0,0,0,0.7);
-        border-radius:5px;
         &:hover {
-            color:rgba(0,0,0,0.9);
-            background:$yellow;
+            background:transparent;
         }
     }
+    .project-title {
+        padding:4rem;
+        display:flex;
+
+    }
+    .project-data {
+        background:rgba(0,0,0,0.075);
+        padding:1rem;
+    }
     i {
-        margin-right:1rem;
+        margin-right:2rem;
         font-size:round($base-font-size*2);
     }
     img {
@@ -114,25 +120,34 @@
     h1 {
         margin-top:0;
         font-size:1.35rem;
+        font-family:$main-type;
+        font-weight:300;
     }
     time, .tag {
-
-        font-size:round($base-font-size*0.8);
+        text-transform:uppercase;
+        color:$text-color;
+        font-size:0.7rem;
     }
 
 }
 
 .article-card {
     max-width:800px;
-    margin:0 5% 0 11.5%;
+    margin:0 auto;
     padding:0 0 4rem 0;
     background:white;
-    .container {
-        margin:0;
-    }
 }
 
 .flex-center {
     display:flex;
     align-items:center;
+}
+
+.about {
+    img {
+        width:8rem;
+        border-radius:5px;
+        float:right;
+        margin:2.5rem 0 3rem 3rem;
+    }
 }
