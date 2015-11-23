@@ -28,41 +28,29 @@ icon: stethoscope
     customers, the problem lies in archaic payment practices, which we hoped to innovate with Patient Portal.
 </p>
 
-<img src="../images/statement-sketch.jpg">
+<img src="/images/statement-sketch.jpg">
 
-<h2>Levels and Dimensions</h2>
+<h2>Getting out of the Building</h2>
 <p>
-    Now that I had a framework for prioritizing questions, I needed to actually design something
-    to answer them. I experimented with complex query-like interfaces and powerful comparison
-    visualizations. But these felt to complicated and didn't offer the obvious defaults that I
-    wanted. I didn't want publishers to put in a lot of effort to get answers. So I tried to work
-    out the inventory data between two axes: levels and dimensions. A level is a scope of inventory,
-    like a placement (1 piece of inventory) or a website (a collection of inventory). A dimension
-    is a lens to view that level.
+    We learned from interviews with patients and healthcare professionals that
+    patients don't care about statement details; they just want to know what they owe and how to pay it.
+
+    This was difficult for us to believe. How could patients not care about what they're paying for? We
+    listened to the feedback and designed a payment solution that payment solution (using Stripe) that
+    connected to the Patient Portal. But we also let patients make payments without logging in, authenticating,
+    and viewing their statements. All they could see if what they owed and to whom.
+</p>
+<blockquote>
+    &ldquo;Patients don't care about statement details; they just want to know what they owe and how to pay it.&rdquo;
+</blockquote>
+<p>
+    Turns out the hypothesis was correct. The conversion funnel for patients who don't log in is 52.1%,
+    compared to 25% for those that do. This means that patients are twice as likely to make a payment
+    if they don't know what they're paying for. However, this is only quantitative data, so we don't
+    know exactly why this is happening.
 </p>
 
-<p>
-    The way I described it to my team is with a metaphorical set of binoculars. Imagine you have a
-    pair of high-tech binoculars and you're looking at a mountain. The binoculars are first set at
-    the widest possible aperture so you can see the whole mountain and the field in the foreground.
-    You can then turn a dial to zoom in on the mountain. You can zoom in all the way until just the
-    peak is in view. These are levels. Another dial on the binoculars allows you to see the mountain
-    through different wavelengths. The default is the visible spectrum but turn this dial and you
-    can see the mountain in UV, infrared, and radio wavelengths. These dimensions can tell you a
-    much richer story than visible light alone.
-</p>
-<p>
-    Levels and Dimensions is a clear framework for thinking about publisher reporting. It also feels
-    very <strong>safe</strong>. Reporting interfaces sometimes lead you down a rabbit hole or can
-    feel intimidating. With this reporting design, you usually know where you stand and what you're
-    looking at. It's easy to navigate and easy to get questions answered.
-</p>
-<h2>Next Steps</h2>
-<p>
-    We didn't include any complex reporting tools like comparing levels across different time periods
-    to find growth or comparing dimensions to find patterns. I'd like to figure out a clean way to complete
-    these tasks.
-</p>
+
 <figure>
     <img src="/images/pub-metrics2.png">
     <figcaption>

@@ -33,6 +33,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom:0.7rem;
 }
 
+blockquote {
+    font-family:$heading-type;
+    font-size:1.25rem;
+    line-height:1.25;
+    margin:3rem 6rem;
+}
+
 .article {
     p, a, ol, ul {
         font-weight:300;
